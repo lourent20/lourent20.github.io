@@ -36,45 +36,78 @@
         </div>
     </header>
     
-                        <!-- About Section -->
-        <div class="w3-container w3-padding-32" id="about"> <!--About header-->
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Over mij</h3>
-            <p>
-                Mijn naam is Lourent en op deze website kun je veel informatie over mij vinden. Ik kan jullie hier veel vertellen over wie ik ben, wat ik doe, en wat ik heb gedaan. Ik hoop jullie met deze site genoeg te hebben geinfotmeert, en zo niet dan kun je een
-                formulier invullen op de contact pagina. <!--Tekst onder about-->
-            </p>
-        </div>
+// A set of walkthrough screens in HTML/CSS/JS. A personal experiment with layering images, CSS3 transitions, & flexbox. 
 
-        <div class="w3-row-padding w3-grayscale">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="Surv1.png" alt="HyperMC" style="width:100%">
-                <h3>HyperMC</h3>
-                <p class="w3-opacity">Manager</p>
-                <p>Ik ben op dit moment manager op HyperMC, voor meer informatie kun je op de link hier onder klikken.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Meer info</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="Loon_3.jpg" alt="DualZ" style="width:100%">
-                <h3>DualZ</h3>
-                <p class="w3-opacity">Moderator</p>
-                <p>Ik ben in het verleden Moderator geweest op DualZ network. Voor meer informatie klik op de link hier onder</p>
-                <p><button class="w3-button w3-light-grey w3-block">Meer info</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="Loon_2.jpg" alt="DualZ" style="width:100%">
-                <h3>DualZ</h3>
-                <p class="w3-opacity">Builder</p>
-                <p>Ik ben in het verleden Builder geweest op DualZ network. Voor meer informatie klik op de link hier onder</p>
-                <p><button class="w3-button w3-light-grey w3-block">Meer info</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="Surv8.jpg" alt="Discord" style="width:100%">
-                <h3>Discord</h3>
-                <p class="w3-opacity">HyperMC</p>
-                <p>Heb je vragen? En wil je snel antwoord? Stuur me dan een berichtje op discord, je kan hier komen via de link hier onder.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Meer info</button></p> 
-            </div>
-        </div>
+%button.open-walkthrough Start
+.walkthrough.show.reveal
+  .walkthrough-pagination
+    %a.dot.active
+    %a.dot
+    %a.dot
+    %a.dot
+    %a.dot
+  .walkthrough-body
+    %ul.screens.animate
+
+      %li.screen.active
+        .media.logo
+          %img.logo{src: "https://s3.amazonaws.com/jebbles-codepen/icon.png"}
+        %h3
+          Product Intro
+          %br Walkthrough
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+      %li.screen
+        .media.books
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_3.png"}
+        %h3
+          Data and File
+          %br Management
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+      %li.screen
+        .media.bars
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_axis.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_3.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_1.png"}
+
+        %h3
+          Analytics
+          %br and Metrics
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+      %li.screen
+        .media.files
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_3.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_4.png"}
+        %h3
+          Reporting
+          %br and Insights
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+      %li.screen
+        .media.comm
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/comm_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/comm_icon_2.png"}
+        %h3
+          Communications
+          %br Tools
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+    %button.prev-screen
+      %i.icon-angle-left
+    %button.next-screen
+      %i.icon-angle-right
+
+  .walkthrough-footer
+    %button.button.next-screen Next
+    %button.button.finish.close{disabled: "true"} Finish
+
     
 
     <!-- Page content -->
@@ -387,6 +420,415 @@
     }
 
     /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+        
+        
+        
+        
+
+        
+        
+@mixin material-shadow() {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+}
+$module-font-size: 14px;
+$bezier: cubic-bezier(.25,.8,.25,1);
+
+body {
+  color: white;
+  font-family: "Lato";
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
+}
+
+.open-walkthrough {
+  border: 0;
+  background: #5da3f2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -60px;
+}
+
+// =================================================================================================
+// Walkthrough
+// =================================================================================================
+.walkthrough {
+  @include material-shadow();
+  background: linear-gradient(to right bottom, #9e66c6 , #6027e1);
+  border-radius: 0;
+  display: none;
+  flex-direction: column;
+  flex: 0 0 auto;
+  font-size: $module-font-size;
+  height: 464px;
+  overflow: hidden;
+  transition: opacity 0.4s $bezier, transform 0.4s $bezier, box-shadow 0.4s $bezier;
+  width: 280px;
+  z-index: 1000;
+
+  &.show {
+    display: flex;
+    opacity: 0;
+    transform: translateY(72px);
+  }
+
+  &.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .walkthrough-body {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    text-align: center;
+
+    .prev-screen,
+    .next-screen {
+      align-self: stretch;
+      background: none;
+      border: 0;
+      margin-top: 40px;
+      color: rgba(white, 0.25);
+      cursor: pointer;
+      flex: 0 0 auto;
+      font-size: 24px;
+      opacity: 1;
+      outline: none;
+      padding: 16px;
+      transform: scale(1);
+      transition: transform 0.4s $bezier, color 0.4s $bezier, opacity 0.4s $bezier;
+      z-index: 1000;
+
+      &:hover,
+      &:active {
+        color: white;
+        transform-origin: center;
+        transform: scale(1.25);
+      }
+
+      &:disabled {
+        opacity: 0;
+      }
+    }
+
+    .prev-screen {
+      order: 1;
+    }
+
+    .next-screen {
+      order: 3;
+    }
+
+    .screens {
+      flex: 1;
+      align-self: stretch;
+      position: relative;
+      margin: 0 -16px;
+      padding: 0;
+      order: 2;
+
+      .screen {
+        position: absolute;
+        list-style-type: none;
+      }
+    }
+
+    .media {
+      background: rgba(white, 0.25);
+      border-radius: 132px;
+      height: 132px;
+      margin: 32px auto;
+      width: 132px;
+    }
+
+    h3 {
+      font-size: 15px;
+      line-height: 1.4em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    p {
+      line-height: 1.6em;
+      font-size: 13px;
+      margin-top: 16px;
+      padding-top: 0;
+      color: rgba(white, 0.8);
+    }
+  }
+
+  .walkthrough-pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    .dot {
+      background: rgba(black, 0.25);
+      border-radius: 8px;
+      height: 8px;
+      margin: 0 4px;
+      transform: scale(0.75);
+      transition: transform 0.4s $bezier, background 0.4s $bezier;
+      width: 8px;
+
+      &.active {
+        background: white;
+        transform: scale(1);
+        transition-delay: 0.4s;
+      }
+    }
+  }
+
+  .walkthrough-footer {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-around;
+    padding: 0;
+
+    button {
+      height: 40px;
+      border: 0;
+      background: #5da3f2;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      border-radius: 0;
+      color: white;
+      flex: 1;
+      font-size: 12px;
+      margin: 0;
+      outline: 0;
+      padding: 12px;
+      transition: opacity 0.4s $bezier, background 0.4s $bezier;
+      cursor: pointer;
+      &:hover {
+        background: lighten(#5da3f2, 3%);
+      }
+      &:active {
+        background: #5da3f2;
+      }
+
+      &:disabled {
+        cursor: pointer;
+      }
+
+      &.finish {
+        background: #3e94f5;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity:0;
+        transform: scale(0, 1);
+        transform-origin: center;
+        transition: opacity 0.4s $bezier, background 0.4s $bezier, transform 0.4s $bezier;
+        &:hover {
+          background: lighten(#3e94f5, 3%);
+        }
+        &:active {
+          background: #3e94f5;
+        }
+        &.active {
+          transform: scale(1, 1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  //Animation styles
+
+  .screens {
+    margin: 0;
+
+    .media {
+      .status-badge {
+        left: 136px;
+        opacity: 0;
+        position: absolute;
+        top: 104px;
+        transform: scale(0);
+        transition: opacity 0.4s $bezier, transform 0.4s $bezier;
+        transition-delay: 0.6s;
+
+        i {
+          display: inline;
+        }
+      }
+
+      &.logo {
+        .logo {
+          margin-top: 20px;
+          opacity: 0;
+          transform: translateY(-60px);
+          transition: opacity 0.4s $bezier, transform 0.4s $bezier;
+          width: 80px;
+        }
+      }
+      .icon {
+        position: absolute;
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 0.4s $bezier, transform 0.4s $bezier;
+        width: 132px;
+        left: 48px;
+        top: 32px;
+      }
+      &.bars {
+        .icon {
+          transform: translate(40px, 20px);
+          &:nth-of-type(2) {
+            transform: scale(0.25);
+            transform-origin: 30% 54%;
+          }
+          &:nth-of-type(3) {
+            transform: scale(0.25);
+            transform-origin: 30% 40%;
+          }
+          &:nth-of-type(4) {
+            transform: scale(0.25);
+            transform-origin: 30% 26%;
+          }
+        }
+      }
+      &.files {
+        .icon {
+          transform: translate(40px, 20px);
+        }
+      }
+      &.comm {
+        .icon {
+          transform: scale(0.25);
+          transform-origin: 29% 73%;
+
+          &:nth-child(2) {
+          transform-origin: 66% 85%;
+          }
+        }
+      }
+    }
+
+    .screen {
+      opacity: 0;
+      position: absolute;
+      transform: translateX(-72px);
+      transition: all 0.4s $bezier;
+
+      &.active {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        transition-delay: 0.4s;
+
+        ~ .screen {
+          opacity: 0;
+          transform: translateX(72px);
+        }
+
+        .media {
+          .status-badge {
+            opacity: 1;
+            transform: scale(1.75);
+          }
+
+          &.logo {
+
+            .logo {
+              opacity: 0.8;
+              transform: translateY(0);
+              transition-delay: 0.6s;
+            }
+
+            .status-badge {
+              transition-delay: 1s;
+            }
+          }
+
+          &.books {
+            .icon {
+              opacity: 1;
+              transform: translateY(0);
+              transition-delay: 0.6s;
+              &:nth-child(2) {
+                transition-delay: 0.725s;
+              }
+              &:nth-child(3) {
+                transition-delay: 0.850s;
+              }
+            }
+            .status-badge {
+              transition-delay: 1.4s;
+            }
+          }
+
+          &.bars {
+            .icon {
+              opacity: 1;
+              transform: translate(0) scale(1);
+              transition-delay: 0.6s;
+              &:nth-child(2) {
+                transition-delay: 1.050s;
+              }
+              &:nth-child(3) {
+                transition-delay: 0.925s;
+              }
+              &:nth-child(4) {
+                transition-delay: 0.8s;
+              }
+            }
+          }
+          &.files {
+            .icon {
+              opacity: 1;
+              transform: translateY(0);
+              transition-delay: 0.9s;
+              &:nth-child(3) {
+                transition-delay: 0.8s;
+              }
+              &:nth-child(2) {
+                transition-delay: 0.7s;
+              }
+              &:nth-child(1) {
+                transition-delay: 0.6s;
+              }
+            }
+            .status-badge {
+              transition-delay: 1.6s;
+            }
+          }
+          &.comm {
+            .icon {
+              opacity: 1;
+              transform: scale(1);
+              transition-delay: 0.6s;
+              &:nth-child(2) {
+                transition-delay: 0.8s;
+              }
+            }
+            .status-badge {
+              transition-delay: 1.6s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+        
 </style>
 
         <script>
