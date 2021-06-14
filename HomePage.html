@@ -1,438 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <!--Website name-->
-<title>Lourusch</title> 
-<meta charset="UTF-8">
+<html lang="en"
 
-    <!--Extra part data imput link hier onder-->    
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!--Links voor data imput-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Webpage</title>
+        <!-- Hier onder link voor data imput-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+    font-awesome/4.7.0/scc/font-awesome.min.css">
+    <link rel="stylesheet" href="style.scc"
+    <link rel="stylesheet" media="screen and (max-device-width: 608px)"
+    href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 502px)"
+    href="phone.scc">
+</head>
 
-    <!--Style-->
-<style>
-    html, body, h1, h2, h3, h4, h5 {
-        font-family: "Open Sans", sans-serif
-    }
-</style>
-
-    <!--Start body-->
-<body class="w3-theme-l5">
-
-    <!-- Navigation over gehele WEBSITE het zelfde-->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href=HomePage class="w3-bar-item w3-button"><b>HM</b> Lourusch</a>
-            <div class="w3-right w3-hide-small">
-                <a href=WebDeveloper class="w3-bar-item w3-button">WebDeveloper</a>
-                <a href=Minecraft class="w3-bar-item w3-button">Minecraft</a>
-                <a href=ContactPage class="w3-bar-item w3-button">Contact</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header HomePage -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img class="w3-image" src="Loon_1.jpg" alt="Header image" width="1500" height="800">
-        <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>HM</b></span> <span class="w3-hide-small w3-text-light-grey">Lourusch</span></h1>
-        </div>
-    </header>
-    
-    <div class="cursor"></div>
-</body
-    
-       
 <body>
     
-        <!-- Navbar op kleine screens (NVT wanneer nodig kan het aan worden gezet). -->
-    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-    </div>
+    <div id="container">
 
-        <!-- Page content -->
-    <div class="w3-content w3-padding" style="max-width:1564px">
-
-        <!-- Page Container -->
-    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
-            <!-- IMP -->
-        <div class="w3-row">
-                <!-- Linker vakken -->
-            <div class="w3-col m3">
-                    <!-- Profiel -->
-                <div class="w3-card w3-round w3-white">
-                    <div class="w3-container">
-                        <p></p>
-                        <h4 class="w3-center">Lourusch</h4>
-                        <p class="w3-center"><img src="Logo1.png" class="w3-circle" style="height:106px;width:106px" alt="PF"></p>
-                        <hr>
-                        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Web Developer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Nederland, Zeeland</p>
-                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 8, 2003</p>
-                    </div>
-                </div>
-                <br>
-
-                    <!-- INFO menu linker vak -->
-                <div class="w3-card w3-round">
-                    <div class="w3-white">
-                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Mijn kennis</button>
-                        <div id="Demo1" class="w3-hide w3-container">
-                            <p></p>
-                            <p>- HTML/CSS web developer</p>
-                        </div>
-                        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>Openstaande projecten</button>
-                        <div id="Demo2" class="w3-hide w3-container">
-                            <p></p>
-                            <p>- Opbouwen WWW.LOURUSCH.NL</p>
-                            <p>- Manager opHyperMc</p>
-
-                            <!--Foto menu (Nog niet ingesteld !!TODO!!-->
-                        </div>
-                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-                        <div id="Demo3" class="w3-hide w3-container">
-                            <div class="w3-row-padding">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                    <!-- Interesses -->
-                <div class="w3-card w3-round w3-white w3-hide-small">
-                    <div class="w3-container">
-                        <p>Interesses</p>
-                        <p>
-                            <span class="w3-tag w3-small w3-theme-d5">Minecraft</span>
-                            <span class="w3-tag w3-small w3-theme-d4">HTML</span>
-                            <span class="w3-tag w3-small w3-theme-d3">CSS</span>
-                            <span class="w3-tag w3-small w3-theme-d2">C#</span>
-                            <span class="w3-tag w3-small w3-theme-d1">JAVA</span>
-                            <span class="w3-tag w3-small w3-theme">Develper</span>
-                            <span class="w3-tag w3-small w3-theme-l1">Manager</span>
-                            <span class="w3-tag w3-small w3-theme-l2">Builder</span>
-                            <span class="w3-tag w3-small w3-theme-l3">Moderator</span>
-                            <span class="w3-tag w3-small w3-theme-l4">Visual studio code</span>
-                            <span class="w3-tag w3-small w3-theme-l5">Eclipse</span>
-                        </p>
-                    </div>
-                </div>
-                <br>
-
-                    <!-- POPUP -->
-                <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-                    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-                        <i class="fa fa-remove"></i>
-                    </span>
-                    <p></p>
-                    <p><strong>Jij daar</strong></p>
-                    <p>Moet je dit eens zien!</p>
-                    <p>Ben jij geintreseerd in een mooie HTML/SCC website + domain? Neem dan snel contact met me op!</p>
-                </div>
-
-                <!-- Einde linker vakken -->
+        <!-- Navigatie menu-->
+        <div class="navbar">
+            <div id="nav">
+                <ul class="links"
+                    <li><a href="" class="nvg">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <LI><A href="">CONTACT</A></LI>
+                </ul>
             </div>
-
-            <!-- Middelste vakken -->
-            <div class="w3-col m7">
-                
-                    <!-- Status -->
-                <div class="w3-row-padding">
-                    <div class="w3-col m12">
-                        <div class="w3-card w3-round w3-white">
-                            <div class="w3-container w3-padding">
-                                <p></p>
-                                <h6 class="w3-opacity">Status</h6>
-                                <p></p>
-                                <p contenteditable="false" class="w3-border w3-padding">Bouwen HTML website </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="w3-container w3-card w3-white w3-round w3-margin">
-                        <!--Post bouwen website-->
-                    <br>
-                    <img src="Logo1.png" alt="Logo" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                    <span class="w3-right w3-opacity">1 week geleden</span>
-                    <h4>Lourusch</h4><br>
-                    <hr class="w3-clear">
-                    <p>Begonnen met het bouwen van deze website.</p>
-                    <p>Na alle ervaring die ik heb opgedaan vind ik het tijd worden aan een eigen website te beginnen. Hier zal je in de toekomst alle nodige informatie over mij kunnen vinden. Ik heb zin om aan dit project te kunnen gaan werken!</p>
-                    <div class="w3-row-padding" style="margin:0 -16px">
-                    </div>
-                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-                </div>
-
-                
-                <div class="w3-container w3-card w3-white w3-round w3-margin">
-                    <!--Post manager HyperMC-->
-                    <br>
-                    <img src="Logo1.png" alt="Logo" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                    <span class="w3-right w3-opacity">2 maanden geleden</span>
-                    <h4>Lourusch</h4><br>
-                    <hr class="w3-clear">
-                    <p>Manager geworden op de beste SMP Minecraft server van Nederland. Ik heb zin om dit avontuur aan te gaan!</p>
-                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-                </div>
-
-                
-                <div class="w3-container w3-card w3-white w3-round w3-margin">
-                    <!--Post maken sites-->
-                    <br>
-                    <img src="Logo1.png" alt="Logo" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                    <span class="w3-right w3-opacity">3 maanden geleden</span>
-                    <h4>Lourusch</h4><br>
-                    <hr class="w3-clear">
-                    <p>Beschikbaar voor het maken van HTML/CSS websites voor andere mensen. Hierbij zit een costum domain (.nl, .com, .net etc.) bij inbegrepen. Voor mijn ervaringen moet je even verder kijken op de website.</p>
-                    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
-                </div>
-
-                <!-- Einde middelste vakken -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-col m2">
-                <div class="w3-card w3-round w3-white w3-center">
-                    <div class="w3-container">
-                        <p></p>
-                        <p><strong>Last website update:</strong></p>
-                        <p>Nieuwe HomePage</p>
-                        <p>13-06-2021</p>
-                        <p><button class="w3-button w3-block w3-theme-l4">Meer info</button></p>
-                    </div>
-                </div>
-                <br>
-                
-                    <!-- Poll -->
-                <div class="w3-card w3-round w3-white w3-center">
-                    <div class="w3-container">
-                        <p></p>
-                        <p><strong>POLL</strong></p>
-                        <img src="Tiktok.png" alt="Tiktok logo" style="width:50%"><br>
-                        <p></p>
-                        <span>Wil jij mijn tiktok pagina zien?</span>
-                        <div class="w3-row w3-opacity">
-                            <div class="w3-half">
-                                <button class="w3-button w3-block w3-green w3-section" title="Accept"><ahref=Manager></a><i class="fa fa-check"></i></button>
-                            </div>
-                            <div class="w3-half">
-                                <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                
-                    <!-- Advertentie -->
-                <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-                    <p><strong>WWW.LOURUSCH.NL</strong></p>
-                </div>
-                <br>
-
-                <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-                    <p><i class="fa fa-bug w3-xxlarge"></i></p>
-                </div>
-
-                <!-- Einde rechter vlakken -->
-            </div>
-
-            <!-- End -->
+        </div>
+        <!-- Maken icon -->
+        <div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>           
         </div>
 
-        <!-- Einde pagina Container -->
+        <!-- Maken social icons -->
+        <div id="follow">
+            <i class="fa fa-linkedin" aria-hidden="true"></i><br>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i><br>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div id="develop">DEVELOP</div>
+        <div id="web">WEB</div>
+        <div id="dev">DEVELOPER</div>
+        <div id="fullstack">Full-Stack</div>
+        <!-- Beetje informatie-->
+        <div id="box1">
+            <div id="web2">Web<span id="dev2">Developer</span></div>
+            <div id="vl"></div>
+            <div id="hello">Hello World,</div>
+            <div id="me">I'm <span id="rks">Rajeev Kr. Singh</span></div>
+            <div id="fullstackdev">Full-Stack <span id="webdev22">Web
+            Developer</span></div>
+        </div>
+
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <!-- Button contact -->
+        <button id="btncontact" type="button">Contact</button>
+
+        <!-- Profiel foto achtergrond -->
+        <div id="pic">
+            <img src="" alt="">
+        </div>
     </div>
-    <br>
-    
-        
-            <!-- Footer -->
-        <div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li><a href="https://discord.gg/sNwd27NVfW">Discord</a></li>
-                            <li><a href="X">Mail</a></li>
-                            <li><a href=ContactPage>Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Minecraft</h3>
-                        <ul>
-                            <li><a href=Manager>Manager</a></li>
-                            <li><a href=Moderator>Moderator</a></li>
-                            <li><a href=Builder>Builder</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Carierre</h3>
-                        <ul>
-                            <li><a href="X">Development</a></li>
-                            <li><a href="X">Prijzen</a></li>
-                            <li><a href=HomePage>Lourusch</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 item social">
-                        <a href="#"><i class="icon ion-social-facebook"></i>
-                                </a><a href="#">
-                        <i class="icon ion-social-twitter"></i>
-                                </a><a href="#">
-                        <i class="icon ion-social-snapchat"></i>
-                                </a><a href="#">
-                        <i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Lourusch © 2021</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-            
-    </div>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Einde footer -->
-</body>
-<body>
-
-<style>
-    /*Footer*/
-    .footer-clean {
-        padding: 50px 0;
-        background-color: #fff;
-        color: #4b4c4d;
-    }
-
-        .footer-clean h3 {
-            margin-top: 0;
-            margin-bottom: 12px;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .footer-clean ul {
-            padding: 0;
-            list-style: none;
-            line-height: 1.6;
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-
-            .footer-clean ul a {
-                color: inherit;
-                text-decoration: none;
-                opacity: 0.8;
-            }
-
-                .footer-clean ul a:hover {
-                    opacity: 1;
-                }
-
-        .footer-clean .item.social {
-            text-align: right;
-        }
-
-    @media (max-width:767px) {
-        .footer-clean .item {
-            text-align: center;
-            padding-bottom: 20px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .footer-clean .item.social {
-            text-align: center;
-        }
-    }
-
-    .footer-clean .item.social > a {
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        border: 1px solid #ccc;
-        margin-left: 10px;
-        margin-top: 22px;
-        color: inherit;
-        opacity: 0.75;
-    }
-
-        .footer-clean .item.social > a:hover {
-            opacity: 0.9;
-        }
-
-    @media (max-width:991px) {
-        .footer-clean .item.social > a {
-            margin-top: 40px;
-        }
-    }
-
-    @media (max-width:767px) {
-        .footer-clean .item.social > a {
-            margin-top: 10px;
-        }
-    }
-
-    .footer-clean .copyright {
-        margin-top: 14px;
-        margin-bottom: 0;
-        font-size: 13px;
-        opacity: 0.6;
-    }
-
-    /* Einde footer (En einde style section) */
-    
-    
-    
-      
-</style>
-
+    <!-- JavaScript sidebar menu -->
     <script>
-// Over mijn (script)
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else {
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className =
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
 
-// Menu kleiner wanneer je op button klikt
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-        //Einde script
-        
-        
-      
+        const slide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.navbar');
+            const navlinks = document.querySelectorAll('.links li');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navbaract');
+
+                navlinks.forEach((link, index) => {
+
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    }
+                    else {
+                        link.style.animation = `navlinkfade 4s ease backwards 
+                        ${index / 10}s`;
+                    }
+                });
+            });
+        }
+        slide();
+
     </script>
-       
-    <!-- Einde body -->
+
 </body>
+
 </html>
