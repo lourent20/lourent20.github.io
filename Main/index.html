@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Webpage</title>
+        <!-- Hier onder link voor data imput-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+    font-awesome/4.7.0/scc/font-awesome.min.css">
+    <link rel="stylesheet" href="style.scc"
+    <link rel="stylesheet" media="screen and (max-device-width: 608px)"
+    href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 502px)"
+    href="phone.scc">
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <!-- Navigatie menu-->
+        <div class="navbar">
+            <div id="nav">
+                <ul class="links"
+                    <li><a href="" class="nvg">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <LI><A href="">CONTACT</A></LI>
+                </ul>
+            </div>
+        </div>
+        <!-- Maken icon -->
+        <div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>           
+        </div>
+
+        <!-- Maken social icons -->
+        <div id="follow">
+            <i class="fa fa-linkedin" aria-hidden="true"></i><br>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i><br>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div id="develop">DEVELOP</div>
+        <div id="web">WEB</div>
+        <div id="dev">DEVELOPER</div>
+        <div id="fullstack">Full-Stack</div>
+        <!-- Beetje informatie-->
+        <div id="box1">
+            <div id="web2">Web<span id="dev2">Developer</span></div>
+            <div id="vl"></div>
+            <div id="hello">Hello World,</div>
+            <div id="me">I'm <span id="rks">Rajeev Kr. Singh</span></div>
+            <div id="fullstackdev">Full-Stack <span id="webdev22">Web
+            Developer</span></div>
+        </div>
+
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <!-- Button contact -->
+        <button id="btncontact" type="button">Contact</button>
+
+        <!-- Profiel foto achtergrond -->
+        <div id="pic">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- JavaScript sidebar menu -->
+    <script>
+
+        const slide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.navbar');
+            const navlinks = document.querySelectorAll('.links li');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navbaract');
+
+                navlinks.forEach((link, index) => {
+
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    }
+                    else {
+                        link.style.animation = `navlinkfade 4s ease backwards 
+                        ${index / 10}s`;
+                    }
+                });
+            });
+        }
+        slide();
+
+    </script>
+
+</body>
+
+</html>
+    
+
+
