@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 608px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 377px)" href="phone.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!--      creating navigation menu        -->
+        <div class="navbar">
+            <div id="nav">
+                <ul class="links">
+                    <li><a href="" class="nvg">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">SKILL</a></li>
+                    <li><a href="">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- creating hamburger icon        -->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <!-- creating vertical line of cyan color for social media icons     -->
+        <div id="vl"></div>
+
+        <!-- adding social media icons     -->
+        <div id="follow">
+            <i class="fa fa-linkedin" aria-hidden="true"></i><br>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i><br>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+
+        <!-- this box contain some information    -->
+        <div id="box1">
+            <div id="hello"> Hello World,</div>
+            <div id="me">I'am <span id="rks">Rajeev Kr. Singh</span></div>
+            <div id="webdev">Full-Stack Web Developer</div>
+            <div id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eaque aliquid doloribus
+                assumenda exercitationem, vero sapiente placeat beatae saepe repellendus. Accusantium cum rerum cumque.
+            </div>
+        </div>
+        <!-- creating button     -->
+        <button id="btncontact" type="button">Contact</button>
+        <button id="btnknow" type="button">Know more</button>
+
+        <!-- Adding profile image in background -->
+        <div id="pic">
+            <img src="pic2.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <!-- javascript for functioning of sidebar menu  -->
+    <script>
+
+        const slide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.navbar');
+            const navlinks = document.querySelectorAll('.links li');
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navbaract');
+
+                navlinks.forEach((link, index) => {
+
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    }
+                    else {
+                        link.style.animation = `navlinkfade 4s ease backwards ${index / 10}s`;
+                    }
+                });
+            });
+        }
+        slide();
+
+    </script>
+
+</body>
+
+</html>
