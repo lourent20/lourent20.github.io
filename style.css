@@ -1,0 +1,241 @@
+/*           Importing Some Google Font links             */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Styling navigation menu    */
+.navbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    justify-content: center;
+    
+}
+
+#nav{
+    position: absolute;
+    top: 6px;
+}
+#nav ul{
+    display: flex;
+    width: 100%;
+
+}
+
+#nav ul li{
+    position: relative;
+    list-style: none;
+    margin-top: 7px;
+    margin-inline: 12px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+#nav ul li a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #a0a0a0;
+    
+}
+
+    /* animation of side bar navigation menu links      */
+@keyframes navlinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+    /* creating animated cyan color underline on navigation links    */
+#nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: cyan;
+    height: 0.5px;
+    width: 0;
+    left: 0;
+    top: 20px;
+    transition: 0.3s;
+    z-index: 4;
+}
+#nav ul li a:hover{
+    color: white;
+}
+
+#nav ul li a:hover:after{
+    width:100%;
+}
+
+.nvg{
+    color: white!important;
+}
+.nvg:after{
+    content: ""!important;
+    position: absolute!important;
+    background-color: cyan!important;
+    height: 0.5px!important;
+    width: 100%!important;
+    left: 0!important;
+    top: 20px!important;
+}
+
+#box1{
+    position: absolute;
+    top: 250px;
+    left: 45px;
+    color: white;
+    z-index: 4;
+}
+
+    /* Social media icons styling   */
+#vl {
+    position: absolute;
+    top: 2px;
+    z-index: 4;
+    right: 31px;
+    width: 1px;
+    height: 144px;
+    background-color: cyan;
+  
+}
+
+#follow{
+    position:absolute;
+    top: 162px;
+    right: 13px;
+    z-index: 4;
+   
+}
+
+#follow i{
+    font-size: 33px;
+    color: white;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+#follow i:hover{
+    color: tomato;
+
+}
+
+   /* Information box  */
+#hello{
+    position: relative;
+    left: 3px;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    
+}
+#me{
+    position: relative;
+    top: -5px;
+    left: 0;
+    font-size: 37px;
+    font-family: 'Lato', sans-serif;
+    
+
+}
+#rks{
+    color: cyan;
+}
+
+#rks:hover{
+    color: tomato;
+}
+#webdev {
+    position: relative;
+    top: -15px;
+    color: #565656;
+    opacity: 0.4;
+    font-size: 70px;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    font-family: 'Righteous', cursive;
+   
+}
+
+#pic img {
+    position: absolute;
+    top: 86px;
+    right: 32px;
+    width: 594px;
+    height: 592px;
+}
+
+#para1{
+    position: absolute;
+    left: 3px;
+    top: 235px;
+    color: white;
+    width: 77%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Button styling       */
+
+#btncontact{
+    position: absolute;
+    top: 595px;
+    left: 52px;
+    width: 141px;
+    height: 43px;
+    margin: 4px;
+    border: 2px solid cyan;
+    color: black;
+    font-family: 'Righteous', cursive;
+    background-color: cyan;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#btnknow{
+    position:absolute;
+    top: 595px;
+    left: 221px;
+    width: 141px;
+    height: 43px;
+    margin: 4px;
+    background: transparent;
+    border: 2px solid cyan;
+    color: white;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#btncontact:hover{
+    background-color:black;
+    color: white;
+}
+
+#btnknow:hover{
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+
+    /* removing hamburger icon from big screen devices    */
+.burger{
+    display: none;
+}
