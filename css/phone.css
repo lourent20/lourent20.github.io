@@ -45,6 +45,11 @@
     animation: anime 2s linear ;
 }
 
+#pic img{
+    right: -96px;
+    opacity: 0.5;
+
+
 
     /* The end  */
       /* thank you for watching    */
