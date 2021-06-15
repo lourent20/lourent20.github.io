@@ -55,10 +55,6 @@ body{
     
 }
 
-.hover-this {
-      transition: all 0.3s ease;
-}
-
 
 
 
@@ -229,23 +225,59 @@ body{
     z-index: 4;
 }
 
-#btncontact:hover{
-    background-color:black;
-    color: white;
+.cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: 0.3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: transform 0.3s ease;
 }
 
 .hover-this:hover ~ .cursor {
       transform: translate(-50%, -50%) scale(8);
 }
+
+#btncontact:hover{
+    background-color:black;
+    color: white;
+}
+
+.cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: 0.3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+      transform: translate(-50%, -50%) scale(8);
+}
+
 
 #btnknow:hover{
     background-color: tomato;
     border: 2px solid tomato;
 }
 
+.cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: 0.3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: transform 0.3s ease;
+}
+
 .hover-this:hover ~ .cursor {
       transform: translate(-50%, -50%) scale(8);
 }
+
 
     /* removing hamburger icon from big screen devices    */
 .burger{
