@@ -4,9 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/scc?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-* {
-    font-family: 'Poppins', sans-serif;
-}
 
 
 .box {
@@ -127,6 +124,7 @@
     padding: 0;
     box-sizing: border-box;
     cursor: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
