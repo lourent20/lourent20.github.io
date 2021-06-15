@@ -16,5 +16,35 @@
 }
 
 
+.navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 322px;
+    height: 100vh;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+
+}
+
+.navbaract{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 322px;
+    height: 100vh;
+    z-index: 5;
+    transition: transform 0.5s ease-in;
+    transform: translateX(-0%);
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: anime 2s linear ;
+}
+
+
     /* The end  */
       /* thank you for watching    */
