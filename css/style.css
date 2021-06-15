@@ -243,12 +243,25 @@ body{
 
 
 
-
-
 html, body {
+      margin: 0;
+      padding: 0;
       cursor: none;
 }
 
+.nav-wrapper {
+      width: 100%;
+      height: 100vh;
+      background: #161616;
+}
+
+nav {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+}
 
 .hover-this {
       transition: all 0.3s ease;
@@ -296,4 +309,4 @@ span {
             padding: 20px 0;
             display: inline-block;
       }
-}
+} 
