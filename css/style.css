@@ -55,6 +55,13 @@ body{
     
 }
 
+.hover-this {
+      transition: all 0.3s ease;
+}
+
+
+
+
     /* animation of side bar navigation menu links      */
 @keyframes navlinkfade{
     from{
@@ -131,7 +138,6 @@ body{
     font-size: 33px;
     color: white;
     margin-bottom: 22px;
-    cursor: pointer;
 }
 
 #follow i:hover{
@@ -228,9 +234,17 @@ body{
     color: white;
 }
 
+.hover-this:hover ~ .cursor {
+      transform: translate(-50%, -50%) scale(8);
+}
+
 #btnknow:hover{
     background-color: tomato;
     border: 2px solid tomato;
+}
+
+.hover-this:hover ~ .cursor {
+      transform: translate(-50%, -50%) scale(8);
 }
 
     /* removing hamburger icon from big screen devices    */
