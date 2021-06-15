@@ -5,20 +5,9 @@
 @import url('https://fonts.googleapis.com/scc?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background: #000000;
-}
 
 .box {
     position: relative;
@@ -131,6 +120,8 @@ body {
 
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -140,6 +131,11 @@ body {
 
 body{
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
     
 }
 
