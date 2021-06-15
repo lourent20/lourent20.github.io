@@ -25,7 +25,6 @@
     z-index: 5;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in;
-
 }
 
 .navbaract{
@@ -44,12 +43,3 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     animation: anime 2s linear ;
 }
-
-#pic img{
-    right: -96px;
-    opacity: 0.5;
-
-
-
-    /* The end  */
-      /* thank you for watching    */
