@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Head -->
+<!-- Head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,15 +13,15 @@
     <link rel="stylesheet" media="screen and (max-device-width: 377px)" href="/css/phone.css">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/83/TfNSW_L.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
-    <!-- Body -->
+<!-- Body -->
 <body>
-
     <div id="container">
-        
-            <!-- Navigatie -->
+
+
+
+<!-- Navigatie & DIV cursor -->
         <div class="navbar">
             <div id="nav">
                 <ul class="links"> 
@@ -38,23 +38,31 @@
         <div class="cursor"></div>
         
         
-            <!-- Creeren icon -->
+
+<!-- Creeren social icons -->
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-            <!-- Verticale lijn boven icons -->
+
+
+
+<!-- Verticale lijn boven icons -->
         <div id="vl"></div>
 
-            <!-- Social icons -->
+
+
+<!-- Social icons aangeven -->
         <div id="follow">
             <i class="fa fa-linkedin" aria-hidden="true"></i><br>
             <i class="fa fa-facebook-official" aria-hidden="true"></i><br>
             <i class="fa fa-instagram" aria-hidden="true"></i>
         </div>
 
-            <!-- Informatie BOX -->
+
+
+<!-- Informatie BOX Midden HomePage -->
         <div id="box1">
             <div id="hello"> Netherlands, zeeland,</div>
             <div id="me">I'am <span id="rks">Lourent Schot</span></div>
@@ -64,19 +72,24 @@
             </div>
         </div>
         
-            <!-- Maken button -->
+
+
+<!-- Maken buttons op de HomePage -->
         <button id="btncontact" type="button">Contact</button>
         <button id="btnknow" type="button">Skill</button>
         
 
 
-            <!-- Profiel foto achtergrond -->
+<!-- Foto achtergrond HomePage -->
         <div id="pic">
             <img src="https://cdn.discordapp.com/attachments/816382764097601576/854749999786491924/image0.png" alt="">
         </div>
 
     </div>   
     
+
+
+<!-- 3 BOXEN onder aan de HomePage (Licht effecten in style.css) -->
 <div class="foobar">
     <div class="box">
         <div class="img8x">
@@ -104,210 +117,10 @@
     </div>
 </div>
                           
-                            
+<!-- Einde HomePage INDEX HTML -->                           
 </body>
 
-<style>
-@import url('https://fonts.googleapis.com/scc?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    cursor: none;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background: #000000;
-}
-
-.box {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-    background: #060c21;
-    transition: 0.5s;
-}
-
-.box:hover {
-    height: 400px;
-}
-
-.box .img8x {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.box .img8x img {
-    max-width: 100%;
-    opacity: 0.1;
-    transition: 0.5s;
-}
-
-.box:hover .img8x img {
-    opacity: 1;
-}
-.box:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -1;
-}
-
-.box:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: #fff;
-    z-index: -2;
-    filter: blur(40px);
-}
-
-.box:before,
-.box:after {
-    background: linear-gradient(235deg,#ffffff,#010615,#00FFFF);
-}
-
-.box:nth-child(2):before,
-.box:nth-child(2):after {
-    background: linear-gradient(235deg,#ffffff,#010615,#00FFFF);
-}
-
-.box:nth-child(3):before,
-.box:nth-child(3):after {
-    background: linear-gradient(235deg,#ffffff,#010615,##00FFFF);
-}
-
-.box .content {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 90px;
-    background: rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
-.box:hover .content {
-    opacity: 1;
-}
-
-.box .content h2 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 1px;
-
-}
-
-.box .content h2 {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 200;
-    letter-spacing: 2px;
-}
-
-    
-    
-    
-    
-#btncontact{
-    position: absolute;
-    top: 595px;
-    left: 52px;
-    width: 141px;
-    height: 43px;
-    margin: 4px;
-    border: 2px solid cyan;
-    color: black;
-    font-family: 'Righteous', cursive;
-    background-color: cyan;
-    z-index: 4;
-}
-
-#btnknow{
-    position:absolute;
-    top: 595px;
-    left: 221px;
-    width: 141px;
-    height: 43px;
-    margin: 4px;
-    background: transparent;
-    border: 2px solid cyan;
-    color: white;
-    font-family: 'Righteous', cursive;
-    z-index: 4;
-}
-
-.cursor {
-      pointer-events: none;
-      position: fixed;
-      padding: 0.3rem;
-      background-color: #fff;
-      border-radius: 50%;
-      mix-blend-mode: difference;
-      transition: transform 0.3s ease;
-      z-index: 8;
-}
-
-.hover-this:hover ~ .cursor {
-      transform: translate(-50%, -50%) scale(8);
-}
-
-#btncontact:hover{
-    background-color:black;
-    color: white;
-}
-
-
-#btnknow:hover{
-    background-color: tomato;
-    border: 2px solid tomato;
-}
-    
-.foobar {
-    width: 100%;
-    position: absolute;
-    top: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-                              
-</style>
-
-    
-    
-    
     <!-- Jacascript menu -->
     <script>
 
@@ -365,5 +178,4 @@ body {
 
 })();   
 </script>
-
 </html>
