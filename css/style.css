@@ -281,37 +281,10 @@ body {
     z-index: 4;
 }
 
-.cursor {
-      pointer-events: none;
-      position: fixed;
-      padding: 0.3rem;
-      background-color: #fff;
-      border-radius: 50%;
-      mix-blend-mode: difference;
-      transition: transform 0.3s ease;
-}
-
-.hover-this:hover ~ .cursor {
-      transform: translate(-50%, -50%) scale(8);
-}
 
 #btncontact:hover{
     background-color:black;
     color: white;
-}
-
-.cursor {
-      pointer-events: none;
-      position: fixed;
-      padding: 0.3rem;
-      background-color: #fff;
-      border-radius: 50%;
-      mix-blend-mode: difference;
-      transition: transform 0.3s ease;
-}
-
-.hover-this:hover ~ .cursor {
-      transform: translate(-50%, -50%) scale(8);
 }
 
 
@@ -320,20 +293,6 @@ body {
     border: 2px solid tomato;
 }
 
-.cursor {
-      pointer-events: none;
-      position: fixed;
-      padding: 0.3rem;
-      background-color: #fff;
-      border-radius: 50%;
-      mix-blend-mode: difference;
-      transition: transform 0.3s ease;
-      z-index: 8;
-}
-
-.hover-this:hover ~ .cursor {
-      transform: translate(-50%, -50%) scale(8);
-}
 
 .foobar {
     width: 100%;
