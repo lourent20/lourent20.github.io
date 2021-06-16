@@ -157,14 +157,14 @@ body {
     top: 250px;
     left: 45px;
     color: white;
-    z-index: 4;
+    z-index: 6;
 }
 
     /* Social media icons styling   */
 #vl {
     position: absolute;
     top: 2px;
-    z-index: 4;
+    z-index: 6;
     right: 31px;
     width: 1px;
     height: 144px;
@@ -176,7 +176,7 @@ body {
     position:absolute;
     top: 162px;
     right: 13px;
-    z-index: 4;
+    z-index: 6;
    
 }
 
