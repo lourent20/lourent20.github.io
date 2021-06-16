@@ -1,3 +1,7 @@
+body {
+    cursor: none;
+}
+
 #btncontact {
     top: 550px;
     width: 108px;
