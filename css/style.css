@@ -1,17 +1,52 @@
-/*           Importing Some Google Font links             */
+/* ------------------------------------------------------ */
+/* ---------- Importing Some Google Font links ---------- */
+/* ------------------------------------------------------ */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Righteous&display=swap');
+import url('https://fonts.googleapis.com/scc?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+
+/* ------------------------------------------------------------------------------ */
+/* --------------------------------- INHOUD ------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------- HOOFDSTUK 1 ---------------------------------- */
+/* ---------------------------------HOMEPAGE------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* -- 1.1 -- GENERAL ------------------------------------------------------------ */
+/* -- 1.2 -- Styling navigation menu -------------------------------------------- */
+/* -- 1.3 -- Animatopm side bar nav menu links ---------------------------------- */
+/* -- 1.4 -- Creating animated cyan color underline on navigation links --------- */
+/* -- 1.5 -- Information box ---------------------------------------------------- */
+/* -- 1.6 -- ALL Button Styling (HomePage) -------------------------------------- */
+/* -- 1.7 -- BOX HOVER ---------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+
+/* --------------------------------- */
+/* ---------- 1.1 GENERAL ---------- */
+/* --------------------------------- */
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     cursor: none;
 }
 
-body{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -21,7 +56,12 @@ body{
     height: 100vh;
 }
 
-/* Styling navigation menu    */
+
+/* ------------------------------------------------- */
+/* ---------- 1.2 Styling navigation menu ---------- */
+/* ------------------------------------------------- */
+
+
 .navbar{
     position: absolute;
     display: flex;
@@ -58,9 +98,11 @@ body{
 }
 
 
+/* ----------------------------------------------------------- */
+/* ---------- 1.3 Animatopm side bar nav menu links ---------- */
+/* ----------------------------------------------------------- */
 
 
-    /* animation of side bar navigation menu links      */
 @keyframes navlinkfade{
     from{
         opacity: 0;
@@ -71,7 +113,13 @@ body{
         transform: translateX(0px);
     }
 }
-    /* creating animated cyan color underline on navigation links    */
+
+
+/* ------------------------------------------------------------------------------------ */
+/* ---------- 1.4 Creating animated cyan color underline on navigation links ---------- */
+/* ------------------------------------------------------------------------------------ */
+
+
 #nav ul li a:after{
     content: "";
     position: absolute;
@@ -143,7 +191,12 @@ body{
 
 }
 
-   /* Information box  */
+
+/* ----------------------------------------- */
+/* ---------- 1.5 Information box ---------- */
+/* ----------------------------------------- */
+
+
 #hello{
     position: relative;
     left: 3px;
@@ -196,8 +249,9 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/* Button styling       */
+/* ------------------------------------------------------- */
+/* ---------- 1.6 ALL Button Styling (HomePage) ---------- */
+/* ------------------------------------------------------- */
 
 #btncontact{
     position: absolute;
@@ -280,8 +334,130 @@ body{
       transform: translate(-50%, -50%) scale(8);
 }
 
+.foobar {
+    width: 100%;
+    position: absolute;
+    top: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
     /* removing hamburger icon from big screen devices    */
 .burger{
     display: none;
+}
+
+/* ----------------------------------- */
+/* ---------- 1.7 BOX HOVER ---------- */
+/* ----------------------------------- */
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+}
+
+.box:hover {
+    height: 400px;
+}
+
+.box .img8x {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .img8x img {
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.box:hover .img8x img {
+    opacity: 1;
+}
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+    background: linear-gradient(235deg,#ffffff,#010615,#00FFFF);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+    background: linear-gradient(235deg,#ffffff,#010615,#00FFFF);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+    background: linear-gradient(235deg,#ffffff,#010615, #00FFFF);
+}
+
+.box .content {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.box .content h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+
+.box .content h2 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
