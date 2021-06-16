@@ -328,6 +328,7 @@ body {
       border-radius: 50%;
       mix-blend-mode: difference;
       transition: transform 0.3s ease;
+      z-index: 8;
 }
 
 .hover-this:hover ~ .cursor {
