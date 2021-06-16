@@ -238,6 +238,7 @@ body {
     right: 32px;
     width: 594px;
     height: 592px;
+    z-index: 1;
 }
 
 #para1{
