@@ -90,7 +90,7 @@
     text-align: center;
 }
 .home .row-left h3{
-    color: var(--blue);
+    color: var((--green);
     font-weight: 400;
     text-transform: uppercase;
 }
