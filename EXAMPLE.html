@@ -61,12 +61,11 @@
         perspective: 1000px;
     }
 
-    .container {
+    .afval {
         width: 50%;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        z-index: 10;
+        align-items: unsafe flex-end;
     }
 
     .card {
@@ -78,18 +77,27 @@
         box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
     }
 
-    .container {
+    .sneaker {
         min-height: 35vh;
         display: flex;
         align-items: center;
-        align-content: flex-end;
+        justify-content: center;
     }
 
-        .container img {
+        .sneaker img {
             width: 20rem;
             z-index: 2;
             transition: all 0.75s ease-out;
         }
+
+    .circle {
+        width: 15rem;
+        height: 15rem;
+        background: #white;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+    }
 
     .info h1 {
         font-size: 3rem;
