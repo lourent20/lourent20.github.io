@@ -278,6 +278,147 @@
             border-radius: 30px;
             font-weight: bolder;
         }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .navbar{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: var(--nero);
+    width: 100%;
+}
+.brand-and-toggler{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+}
+.navbar-toggler:hover{
+    opacity: 0.8;
+}
+.navbar-collapse{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.nav-item{
+    text-align: center;
+    padding: 0.6rem;
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: var(--transition);
+}
+.nav-item:hover::after{
+    width: 100px;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+.nav-link:hover{
+    color: var(--green);
+}
+.nav-active .nav-link{
+    color: var(--green);
+}
+  
+.showNav{
+    height: 385px;
+}
+  
+.footer{
+    padding: 2.5rem 0;
+    border-top: 1.5px solid #252525;
+}
+.footer-title{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: var(--poppins);
+    font-weight: 700;
+}
+.footer .col{
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer .col:first-child .text{
+    width: 80%;
+    margin: 0 auto;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    background: var(--nero);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1.5rem 0.5rem;
+    transition: var(--transition);
+}
+.social-links a:hover{
+    background: var(--green);
+}
+.footer-links a{
+    display: block;
+    text-transform: capitalize;
+    padding: 0.2rem 0;
+    transition: var(--transition);
+}
+.footer-links a .fas{
+    display: none;
+}
+.footer-links a:hover{
+    color: #fff;
+}
+.footer .col:last-child div{
+    padding: 0.2rem 0;
+}
+.footer .col:last-child .fas{
+    padding-right: 0.5rem;
+}
+.footer-text .text{
+    text-align: center;
+}
+  
+  
 </style>
     
 <script>
