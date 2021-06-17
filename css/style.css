@@ -90,7 +90,7 @@
     text-align: center;
 }
 .home .row-left h3{
-    color: var((--blue);
+    color: var((--green);
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -119,7 +119,7 @@
     border: 1px solid #f7f7f7;
 }
 .home-pg-btn button:first-child{
-    border-color: var(--blue);
+    border-color: var(--green);
 }
 .home-pg-btn button:last-child{
     background: transparent;
