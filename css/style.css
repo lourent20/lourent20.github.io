@@ -119,7 +119,7 @@
     border: 1px solid #f7f7f7;
 }
 .home-pg-btn button:first-child{
-    border-color: var(--green);
+    border-color: var(--blue);
 }
 .home-pg-btn button:last-child{
     background: transparent;
