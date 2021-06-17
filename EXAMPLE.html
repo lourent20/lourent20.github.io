@@ -80,6 +80,84 @@
 </body>
   
 <style>
+  
+  
+  
+  
+  
+  
+  
+  .navbar{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: var(--nero);
+    width: 100%;
+}
+.brand-and-toggler{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+}
+.navbar-toggler:hover{
+    opacity: 0.8;
+}
+.navbar-collapse{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.nav-item{
+    text-align: center;
+    padding: 0.6rem;
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: var(--transition);
+}
+.nav-item:hover::after{
+    width: 100px;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+.nav-link:hover{
+    color: var(--green);
+}
+.nav-active .nav-link{
+    color: var(--green);
+}
+  
+  
+  
+  
   * {
         margin: 0;
         padding: 0;
