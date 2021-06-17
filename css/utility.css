@@ -6,6 +6,7 @@
     --black: #111;
     --nero: #252525;
     --transition: all 0.4s ease;
+    --blue: #0084ff;
 }
 *{
     box-sizing: border-box;
