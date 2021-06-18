@@ -28,8 +28,40 @@
             </span>
           </button>
         </div>
+        
+        <div class = "navbar-collapse">
+          <ul class = "navbar-nav">
+            <li class = "nav-item nav-active">
+              <a href = "index" class = "nav-link">home</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "about" class = "nav-link">about</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "blog" class = "nav-link">blog</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "templates" class = "nav-link">templates</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "skills" class = "nav-link">skills</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "projects" class = "nav-link">projects</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "https://my.cirrushop.com/Login/Login.aspx" class = "nav-link">portaal</a>
+            </li>
+            <li class = "nav-item">
+              <a href = "contact" class = "nav-link">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar section -->
     
- <div class="container">
+ <div class="container" id="test">
         <div class="card">
             <div class="box">
                 <div class="content">
@@ -153,7 +185,7 @@
         min-height: 110vh;
     }
   
-    .container {
+    .test {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -162,7 +194,7 @@
         margin: 40px 0;
     }
 
-    .container .card {
+    .test .card {
         position: relative;
         min-width: 320px;
         height: 440px;
@@ -174,7 +206,7 @@
         margin: 30px;
     }
 
-    .container .card .box:before {
+    .test .card .box:before {
         content: '';
         position: absolute;
         top: 0;
@@ -184,7 +216,7 @@
         background: rgba(255,255,255,0.1);
     }
 
-    .container .card .box {
+    .test .card .box {
         position: absolute;
         top: 20px;
         left: 20px;
@@ -201,7 +233,7 @@
         overflow: hidden;
     }
 
-    .container .card .box::before {
+    .test .card .box::before {
         content: '';
         position: absolute;
         top: 0;
@@ -212,17 +244,17 @@
         pointer-events: none;
     }
 
-    .container .card .box:hover {
+    .test .card .box:hover {
         transform: translateY(-50px);
         box-shadow: 0 40px 70px rgba(0,0,0,0.5);
     }
 
-    .container .card .box  {
+    .test .card .box  {
         padding: 20px;
         text-align: center;
     }
 
-    .container .card .box h2 {
+    .test .card .box h2 {
         position: absolute;
         top: -10px;
         right: 30px;
@@ -230,7 +262,7 @@
         color: rgba(255,255,255,0.05);
     }
 
-    .container .card .box h3 
+    .test .card .box h3 
     {
         font-size: 1.8em;
         color: rgba(255,255,255,0.5);
@@ -238,7 +270,7 @@
         transition: 0.5s;
     }
 
-    .container .card .box p {
+    .test .card .box p {
         font-size: 16px;
         font-weight: 300;
         color: rgba(255,255,255,0.5);
@@ -246,7 +278,7 @@
         transition: 0.5s;
     }
 
-    .container .card .box a {
+    .test .card .box a {
         position: relative;
         display: inline-block;
         padding: 8px 20px;
@@ -259,7 +291,7 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
-    .container .card:nth-child(1) .box a {
+    .test .card:nth-child(1) .box a {
         background: #2196f3;
     }
 </style>
