@@ -276,3 +276,25 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* #### Media Queries #### */
+@media screen and (min-width: 500px){
+    /* home page */
+    .home .row-left h1{
+        font-size: 4rem;
+    }
+    .home .row-left h2{
+        font-size: 1.4rem;
+    }
+    .home-pg-btn button{
+        padding: 1rem 1.5rem;
+    }
+    .home .img-container{
+        width: 320px;
+        height: 320px;
+    }
+    .home .img-border{
+        width: 325px;
+        height: 325px;
+    }
+}
